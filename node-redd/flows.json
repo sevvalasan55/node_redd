@@ -1,0 +1,2235 @@
+[
+    {
+        "id": "c6e2056fe0d030af",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "1731a8afaf278486",
+        "type": "subflow",
+        "name": "Check User",
+        "info": "",
+        "category": "",
+        "in": [],
+        "out": [],
+        "env": [],
+        "meta": {},
+        "color": "#3FADB5",
+        "icon": "font-awesome/fa-user-secret"
+    },
+    {
+        "id": "d3b6bbd5139f3906",
+        "type": "subflow",
+        "name": "Has Admin",
+        "info": "",
+        "category": "",
+        "in": [],
+        "out": [],
+        "env": [],
+        "meta": {},
+        "color": "#E9967A",
+        "icon": "font-awesome/fa-diamond"
+    },
+    {
+        "id": "78b14acfd61617f6",
+        "type": "subflow",
+        "name": "Check User",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 100,
+                "y": 220,
+                "wires": [
+                    {
+                        "id": "70332cfc70d30186"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 820,
+                "y": 160,
+                "wires": [
+                    {
+                        "id": "1f3dc74ba90fd9a6",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#3FADB5",
+        "icon": "font-awesome/fa-user-secret"
+    },
+    {
+        "id": "6f1b7a955d99d1aa",
+        "type": "subflow",
+        "name": "Has admin",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 160,
+                "y": 120,
+                "wires": [
+                    {
+                        "id": "c3ede6242f771879"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 500,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "c3ede6242f771879",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#FFAAAA",
+        "icon": "font-awesome/fa-diamond"
+    },
+    {
+        "id": "c197ed750d7bd0a3",
+        "type": "mongodb4-client",
+        "name": "TODO DB",
+        "protocol": "mongodb",
+        "hostname": "localhost",
+        "port": "27017",
+        "dbName": "todo",
+        "appName": "",
+        "authSource": "",
+        "authMechanism": "DEFAULT",
+        "tls": false,
+        "tlsCAFile": "",
+        "tlsCertificateKeyFile": "",
+        "tlsInsecure": false,
+        "connectTimeoutMS": "30000",
+        "socketTimeoutMS": "0",
+        "minPoolSize": "0",
+        "maxPoolSize": "100",
+        "maxIdleTimeMS": "0",
+        "uri": "",
+        "advanced": "{}",
+        "uriTabActive": "tab-uri-simple"
+    },
+    {
+        "id": "6efc9b95bad15d2f",
+        "type": "mongodb4-client",
+        "name": "",
+        "protocol": "mongodb",
+        "hostname": "localhost",
+        "port": "27017",
+        "dbName": "todo",
+        "appName": "",
+        "authSource": "",
+        "authMechanism": "DEFAULT",
+        "tls": false,
+        "tlsCAFile": "",
+        "tlsCertificateKeyFile": "",
+        "tlsInsecure": false,
+        "connectTimeoutMS": "30000",
+        "socketTimeoutMS": "0",
+        "minPoolSize": "0",
+        "maxPoolSize": "100",
+        "maxIdleTimeMS": "0",
+        "uri": "",
+        "advanced": "{}",
+        "uriTabActive": "tab-uri-simple"
+    },
+    {
+        "id": "6dc6b75ee7f6286d",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "5932c94f09fc36d7",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "ff1e36ebeac00b18",
+        "type": "ui_group",
+        "name": "My_loT_Dashboard",
+        "tab": "6dc6b75ee7f6286d",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": true
+    },
+    {
+        "id": "a7460b140009c932",
+        "type": "ui_tab",
+        "name": "Template",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a9fb407da1a2d315",
+        "type": "ui_tab",
+        "name": "Progress",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "394b37a67e0e64d3",
+        "type": "ui_group",
+        "name": "bar",
+        "tab": "a9fb407da1a2d315",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "ad86b39e2175d344",
+        "type": "ui_spacer",
+        "z": "c6e2056fe0d030af",
+        "name": "spacer",
+        "group": "394b37a67e0e64d3",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "f36d9c9c.4d6b18",
+        "type": "ui_group",
+        "name": "User Profile",
+        "tab": "5a9e9d64.3f4c1",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "5a9e9d64.3f4c1",
+        "type": "ui_tab",
+        "name": "Dashboard",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "9964554604a9c5a0",
+        "type": "mongo-client",
+        "uri": "",
+        "name": "",
+        "options": ""
+    },
+    {
+        "id": "5a0e5736.0c29a",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "7a12e572.0b97cc",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "7a12e572.0b97cc",
+        "type": "ui_tab",
+        "name": "Tab 1",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "2f1f2388.010ed4",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "69c03f9d.56dbd4",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "69c03f9d.56dbd4",
+        "type": "ui_tab",
+        "name": "Tab 1",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "91c8f88.02b3008",
+        "type": "mongodb",
+        "hostname": "localhost",
+        "port": "27017",
+        "db": "tododb",
+        "name": "MongoDB"
+    },
+    {
+        "id": "43c403a4a843156a",
+        "type": "jwt verify",
+        "z": "78b14acfd61617f6",
+        "name": "",
+        "alg": [
+            "HS256"
+        ],
+        "jwkurl": "",
+        "secret": "123456",
+        "key": "",
+        "signvar": "token",
+        "storetoken": "token",
+        "x": 490,
+        "y": 220,
+        "wires": [
+            [
+                "1f3dc74ba90fd9a6"
+            ]
+        ]
+    },
+    {
+        "id": "1f3dc74ba90fd9a6",
+        "type": "function",
+        "z": "78b14acfd61617f6",
+        "name": "function 4",
+        "func": "if(!msg.token || msg.token.ip !== msg.req.ip) { //msg.token.ip nin şuanki isteğin ip si ile eşleşip eşleşmediğini kontrol eder\n    //token geçerli değilse veya \n    return [null,msg]\n}\n\nmsg.user=msg.token //eğer token varsa msg.token e msg.user atanır\n//kullanıcı verileri msg.user içine yerleşir\nreturn msg;",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 220,
+        "wires": [
+            [],
+            [
+                "7672ad338094aa2e"
+            ]
+        ]
+    },
+    {
+        "id": "70332cfc70d30186",
+        "type": "function",
+        "z": "78b14acfd61617f6",
+        "name": "function 5",
+        "func": "msg.token=msg.req.cookies.token || \"\"\nreturn msg;\n\n//kullanıcı oturum açtığında tokenler çerez olarak saklanır\n//eğer token doluysa oturum açmış demektir, boşsa oturum açmaz \"\"boş string döndürür",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 220,
+        "wires": [
+            [
+                "43c403a4a843156a"
+            ]
+        ]
+    },
+    {
+        "id": "6fe9c5500a1dc437",
+        "type": "catch",
+        "z": "78b14acfd61617f6",
+        "name": "",
+        "scope": [
+            "43c403a4a843156a"
+        ],
+        "uncaught": false,
+        "x": 510,
+        "y": 320,
+        "wires": [
+            [
+                "1f3dc74ba90fd9a6"
+            ]
+        ]
+    },
+    {
+        "id": "7672ad338094aa2e",
+        "type": "http response",
+        "z": "78b14acfd61617f6",
+        "name": "",
+        "statusCode": "302",
+        "headers": {
+            "location": "/login"
+        },
+        "x": 880,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "c3ede6242f771879",
+        "type": "function",
+        "z": "6f1b7a955d99d1aa",
+        "name": "function 7",
+        "func": "if(msg.user && msg.user.roles && msg.user.roles.includes(\"admin\")) return msg\n\nreturn [null, msg];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 120,
+        "wires": [
+            [],
+            [
+                "db377210d0c37fe1"
+            ]
+        ]
+    },
+    {
+        "id": "db377210d0c37fe1",
+        "type": "http response",
+        "z": "6f1b7a955d99d1aa",
+        "name": "",
+        "statusCode": "302",
+        "headers": {
+            "location": "/login"
+        },
+        "x": 540,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "0181a38d740d0a98",
+        "type": "http in",
+        "z": "c6e2056fe0d030af",
+        "name": "",
+        "url": "/",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 450,
+        "y": 300,
+        "wires": [
+            [
+                "4984f34159e8ea3e"
+            ]
+        ]
+    },
+    {
+        "id": "2fc2d4a27056c845",
+        "type": "http response",
+        "z": "c6e2056fe0d030af",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1590,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "227e7279384db33e",
+        "type": "template",
+        "z": "c6e2056fe0d030af",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "html",
+        "syntax": "mustache",
+        "template": "<!DOCTYPE html>\n<html lang=\"tr\">\n\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Planlarım</title>\n    <link rel=\"stylesheet\" href=\"/css/bootstrap.min.css\">\n    <link rel=\"stylesheet\" href=\"/font/bootstrap-icons.min.css\">\n    <style>\n        /* Style code remains the same */\n        * {\n            margin: 0;\n            padding: 0;\n            box-sizing: border-box;\n        }\n\n        :root {\n            --background: #000430;\n            --secondaryBackground: #171c48;\n            --text: #fff;\n            --purple: #828dff;\n            --teal: #24feee;\n        }\n\n        body {\n            background-color: var(--background);\n            color: var(--text);\n        }\n\n        .container {\n            display: flex;\n            flex-direction: column;\n            align-items: center;\n            justify-content: flex-start;\n            margin: 20px auto;\n            max-width: 800px;\n        }\n\n        .stats-container {\n            padding: 20px;\n            border-radius: 20px;\n            border: 2px solid var(--purple);\n            display: flex;\n            gap: 50px;\n            width: 100%;\n            justify-content: space-between;\n            margin-bottom: 20px;\n        }\n\n        .details {\n            width: 100%;\n        }\n\n        #progressBar {\n            width: 100%;\n            height: 10%;\n            background-color: var(--secondaryBackground);\n            border-radius: 5px;\n            margin-top: 20px;\n        }\n\n       \n        #progress {\n        width: {{progressWidth}}%;\n        height: 10px;\n        background-color: var(--teal);\n        border-radius: 10px;\n        transition: all 0.3s ease;\n        }\n\n        #numbers {\n            width: 100px;\n            height: 100px;\n            background-color: var(--purple);\n            display: flex;\n            align-items: center;\n            justify-content: center;\n            border-radius: 50%;\n            font-size: 30px;\n            font-weight: bold;\n        }\n\n        form {\n            margin-top: 20px;\n            width: 100%;\n            max-width: 1000px;\n            display: flex;\n            gap: 10px;\n            flex-direction: column;\n        }\n\n        input {\n            flex: 1;\n            padding: 10px;\n            background: var(--secondaryBackground);\n            border: 1px solid var(--purple);\n            border-radius: 10px;\n            outline: none;\n            color: white;\n            font-size: 1em;\n        }\n\n        button {\n            width: 60px;\n            height: 60px;\n            border-radius: 50%;\n            display: flex;\n            align-items: center;\n            justify-content: center;\n            background-color: var(--purple);\n            color: var(--text);\n            font-size: 30px;\n            font-weight: bold;\n            outline: none;\n        }\n\n        .task-title {\n            font-weight: bold;\n            font-size: 1.2em;\n        }\n\n        .task-info {\n            font-size: 0.9em;\n            color: #666;\n        }\n\n        .btn-custom {\n            background-color: var(--purple);\n            color: var(--text);\n            border-radius: 5px;\n            padding: 5px 10px;\n            font-size: 0.8em;\n            width: 40px;\n            height: 40px;\n            display: flex;\n            align-items: center;\n            justify-content: center;\n        }\n\n        .btn-custom:hover {\n            background-color: #6b79ff;\n        }\n\n        .completed {\n            text-decoration: line-through;\n            color: #aaa;\n        }\n\n        .list-group-item {\n            background: var(--secondaryBackground);\n            color: var(--text);\n            border: 1px solid var(--purple);\n            border-radius: 10px;\n            margin-bottom: 10px;\n            /* Reduce bottom margin */\n            padding: 10px;\n            /* Reduce padding */\n        }\n\n        .list-group-item .btn-custom {\n            background-color: var(--purple);\n            border: none;\n        }\n\n        .list-group-item .btn-custom:hover {\n            background-color: #6b79ff;\n        }\n\n        .alert {\n            width: 100%;\n        }\n\n        .position-relative {\n            width: 100%;\n        }\n\n        .position-fixed {\n            position: fixed;\n        }\n\n        .bottom-0 {\n            bottom: 0;\n        }\n\n        .end-0 {\n            right: 0;\n        }\n\n        .m-4 {\n            margin: 1.5rem !important;\n        }\n\n        .shadow {\n            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);\n        }\n\n        .top-0 {\n            top: 0;\n        }\n\n        .mx-5 {\n            margin-left: 3rem !important;\n            margin-right: 3rem !important;\n        }\n\n        .d-flex {\n            display: flex;\n        }\n\n        .justify-content-between {\n            justify-content: space-between;\n        }\n\n        .task-list {\n            width: 100%;\n            max-width: 1000px;\n            margin-top: 20px;\n        }\n\n        .user-info {\n            display: flex;\n            align-items: center;\n            gap: 10px;\n            padding: 10px;\n            background-color: var(--secondaryBackground);\n            border-radius: 10px;\n            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);\n            border: 1px solid var(--purple);\n        }\n\n        .user-btn {\n            background-color: var(--purple);\n            color: var(--text);\n            border: none;\n            padding: 10px 20px;\n            border-radius: 10px;\n            font-weight: normal;\n            font-size: 1em;\n            cursor: pointer;\n            transition: background-color 0.3s;\n        }\n\n        .user-btn:hover {\n            background-color: #6b79ff;\n        }\n\n        .logout-btn {\n            background-color: #343a40;\n            color: var(--text);\n            border: none;\n            padding: 10px 15px;\n            border-radius: 10px;\n            font-size: 1em;\n            cursor: pointer;\n            transition: background-color 0.3s;\n            display: flex;\n            align-items: center;\n            justify-content: center;\n        }\n\n        .logout-btn:hover {\n            background-color: #495057;\n        }\n\n        .motivation-message {\n            margin-top: 10px;\n            font-size: 1.2em;\n            font-weight: bold;\n            color: var(--teal);\n        }\n\n        .task-info {\n            font-size: 0.9em;\n            color: #fff;\n        }\n\n        .badge-custom {\n            background-color: transparent;\n            color: white;\n            border: 1px solid white;\n            padding: 0.3rem 0.6rem;\n        }\n\n        #category {\n            content: \"{{category}}\";\n            font-size: 1em;\n            /* Yazıyı bir tık büyüt */\n            padding: 5px 10px;\n            /* İç boşluk ekle */\n            border: 1px solid var(--text);\n            /* Kenarlık ver */\n            border-radius: 5px;\n            /* Kenarlıkları yuvarla */\n            display: inline-block;\n            /* Blok olarak göster */\n            margin-bottom: 10px;\n            /* Alt boşluk ekle */\n        }\n    </style>\n</head>\n\n<body>\n    <div class=\"container\">\n        <div class=\"stats-container\" style=\"margin-left: 3rem\">\n            <div class=\"details\">\n                <h1>Planlarım</h1>\n                <p>Hadi başlayalım!</p>\n                <div id=\"progressBar\">\n                    <div id=\"progress\"></div>\n                </div>\n                <p class=\"motivation-message\">{{motivationMessage}}</p>\n            </div>\n            <div class=\"stats-numbers\">\n                <p id=\"numbers\"><i class=\"bi {{emojiClass}}\"></i></p>\n            </div>\n        </div>\n\n        {{#error}}\n        <div class=\"alert alert-danger text-center\">\n            <strong>{{message}}</strong>\n        </div>\n        {{/error}}\n\n        <form action=\"/opt/add\" method=\"POST\" class=\"d-flex flex-column align-items-start\" style=\"margin-left: 4rem\">\n            <div class=\"d-flex gap-2 align-items-center col-md-12\">\n                <input required name=\"name\" class=\"form-control-lg col-md-11\" type=\"text\" placeholder=\"Planınızı girin.\" />\n                <button class=\"btn btn-custom\" title=\"Ekle\" type=\"submit\">+</button>\n            </div>\n            <div class=\"d-flex gap-3 align-items-center\" style=\"border: 1px solid var(--purple); padding: 7px;\">\n                <label for=\"startDate\" class=\"form-label\">Başlangıç Tarihi</label>\n                <input id=\"startDate\" name=\"date\" class=\"form-control form-control-sm flex-grow-1\" type=\"date\" placeholder=\"Başlangıç Tarihi Seçin.\" />\n                <label for=\"endDate\" class=\"form-label\">Bitiş Tarihi</label>\n                <input id=\"endDate\" name=\"datee\" class=\"form-control form-control-sm flex-grow-1\" type=\"date\" placeholder=\"Bitiş Tarihi Seçin.\" />\n\n\n                <div class=\"d-flex gap-3 align-items-center\" \">\n                    <label for=\"filter\" class=\"form-label\">Kategori Seç</label>\n                    <select id=\"filter\" name=\"category\" class=\"form-control form-control-sm flex-grow-1\">\n                                <option value=\"Sağlık\">Seçiniz</option>\n                                    <option value=\"Eğitim\">Eğitim</option>\n                                    <option  value=\"İş\">İş</option>\n                                    <option  value=\"Kişisel Gelişim\">Kişisel Gelişim</option>\n                                    <option value=\"Sağlık\">Sağlık</option>\n                                    <option value=\"Sağlık\">Ev</option>\n                                    <option value=\"Sağlık\">Diğer</option>\n                                </select>\n                </div>\n            </div>\n            \n       \n        </form>\n        <!-- <div class=\"d-flex\">\n            <label for=\"filter\" class=\"form-label\">Kategori Seç</label>\n            <select id=\"filter\" name=\"category\" class=\"form-control form-control-sm\">\n                    <option value=\"\">Hepsi</option>\n                    <option value=\"Eğitim\">Eğitim</option>\n                    <option value=\"İş\">İş</option>\n                    <option value=\"Kişisel Gelişim\">Kişisel Gelişim</option>\n                    <option value=\"Sağlık\">Sağlık</option>\n                </select>\n           <button  {{filtreKategori}} onclick=\"filterByCategory()\">Listele</button>\n        </div>\n        \n        <div id=\"result\"></div> -->\n\n        <ul class=\"task-list\">\n            {{#payload}}\n            <li class=\"list-group-item\">\n                <small id=\"category\"><i></i> {{category}}</small>\n                <div class=\"d-flex justify-content-between align-items-center\">\n                    <div>\n                        <span class=\"{{#done}}completed{{/done}} task-title\" style=\"font-size:20px\">{{name}}</span>\n                        <span class=\"badge badge-custom\" style=\"font-size:9px\">{{stamp.username}}</span> <br> <br>\n                        <div class=\"task-info\">\n                            <small><i class=\"bi bi-calendar\"></i> {{date}}</small> |\n                            <small><i class=\"bi bi-calendar\"></i> {{datee}}</small>\n                        </div>\n                    </div>\n                    <div>\n                        <div class=\"btn-group\">\n                            <form method=\"POST\">\n                                <input type=\"hidden\" name=\"id\" value=\"{{_id}}\" />\n                                {{#done}}\n                                <button type=\"submit\" class=\"btn btn-custom\" formaction=\"/opt/open\" title=\"Düzenle\">\n                                    <i class=\"bi bi-arrow-counterclockwise\"></i>\n                                </button>\n                                {{/done}}\n                                {{^done}}\n                                <a href=\"/edit/{{_id}}\" class=\"btn btn-custom\" title=\"Düzenle\">\n                                    <i class=\"bi bi-pencil-square\"></i>\n                                </a>\n                                <button type=\"submit\" class=\"btn btn-custom\" formaction=\"/opt/complete\" title=\"Tamamlandı\">\n                                    <i class=\"bi bi-check-square\"></i>\n                                </button>\n                                {{/done}}\n                                <button type=\"submit\" class=\"btn btn-custom\" formaction=\"/opt/trash\" title=\"Sil\">\n                                    <i class=\"bi bi-trash-fill\"></i>\n                                </button>\n                            </form>\n                        </div>\n                    </div>\n                </div>\n            </li>\n            {{/payload}}\n\n            {{^payload}}\n            <li class=\"text-center text-muted\">Henüz hiç giriş yapılmadı.</li>\n            {{/payload}}\n        </ul>\n\n        {{#hasAdmin}}\n        <div class=\"position-relative\">\n            <a href=\"/user-list\" class=\"btn btn-danger btn-lg position-fixed bottom-0 end-0 m-4 shadow\">\n                <i class=\"bi bi-person-fill\"></i>\n            </a>\n        </div>\n        {{/hasAdmin}}\n\n        <div class=\"user-info position-fixed top-0 end-0 mx-5\">\n            <button class=\"user-btn\">{{user.displayName}} {{user.username}}</button>\n            <a href=\"/logout\" title=\"Çıkış Yap\" class=\"logout-btn\"><i class=\"bi bi-box-arrow-right\"></i></a>\n        </div>\n\n        <script src=\"/js/bootstrap.bundle.min.js\"></script>\n        <script>\n            const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle=\"tooltip\"]');\n            const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));\n        </script>\n       \n    \n</body>\n\n</html>",
+        "output": "str",
+        "x": 1460,
+        "y": 300,
+        "wires": [
+            [
+                "2fc2d4a27056c845"
+            ]
+        ]
+    },
+    {
+        "id": "e3e955e30e316a5e",
+        "type": "function",
+        "z": "c6e2056fe0d030af",
+        "name": "db.todo.find()",
+        "func": "let query= msg.user.roles.includes(\"admin\") ? {} : {\n     \"stamp.username\": msg.user.username\n }\n\n msg.payload= [[\n     {\n         $match: query //query değişeni kullanarak belgeleri filtreler\n        \n     },\n     {\n         $sort: {\n             \"category\": 1,\n             \"stamp.createdAt\": -1  //stamp.created alanına göre azalan sırada filtreler\n         }\n     }\n   \n ]]\n\n msg.hasAdmin=msg.user.roles.includes(\"admin\")\n\n\n return msg\n\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 300,
+        "wires": [
+            [
+                "f02c3e0c5f251986"
+            ]
+        ]
+    },
+    {
+        "id": "fd9a539031eaf6d8",
+        "type": "link in",
+        "z": "c6e2056fe0d030af",
+        "name": "link in 1",
+        "links": [
+            "0db87c94349cbd1b",
+            "65b765dd70078f1f",
+            "7c9e5a6ad2214139",
+            "aff72e95f0bc5a62"
+        ],
+        "x": 515,
+        "y": 240,
+        "wires": [
+            [
+                "4984f34159e8ea3e"
+            ]
+        ]
+    },
+    {
+        "id": "6e6c6c03969df73d",
+        "type": "http in",
+        "z": "c6e2056fe0d030af",
+        "name": "",
+        "url": "/opt/:type",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 299,
+        "y": 632,
+        "wires": [
+            [
+                "50ed3e061cf8c0f1"
+            ]
+        ]
+    },
+    {
+        "id": "b79d17467522ce16",
+        "type": "function",
+        "z": "c6e2056fe0d030af",
+        "name": "db.todo.opt()",
+        "func": "\nconst date = new Date();\nconst now = date.getTime();\nmsg.formData = msg.payload;\n\n// Ekleme işlemi\nif (msg.req.params.type === \"add\") {\n    msg.payload = {\n        id: now,\n        name: msg.formData.name,\n        done: false,\n        stamp: {\n            createAt: now,\n            ip: msg.req.ip,\n            username: msg.user.username || \"\",\n            email: msg.user.email || \"\"\n        },\n        date: msg.formData.date || date.toLocaleDateString(\"TR\") ,\n        datee: msg.formData.datee || date.toLocaleDateString(\"TR\"),\n        category:msg.formData.category\n    };\n    return msg;\n}\n\n// Diğer işlemler (örneğin, veriyi güncelleme)\nmsg.payload = [{\n    _id: msg.formData.id\n}];\nreturn [null, msg];\n",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 620,
+        "wires": [
+            [
+                "66abcd0622c3b585"
+            ],
+            [
+                "572e228fd7b7a6f0"
+            ]
+        ],
+        "outputLabels": [
+            "Succ",
+            "Err"
+        ]
+    },
+    {
+        "id": "ccb224b910fc3c3c",
+        "type": "http response",
+        "z": "c6e2056fe0d030af",
+        "name": "",
+        "statusCode": "302",
+        "headers": {
+            "location": "/"
+        },
+        "x": 1280,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "5e0339cae63b9ec7",
+        "type": "function",
+        "z": "c6e2056fe0d030af",
+        "name": "validation",
+        "func": "// İşlem türlerini ve her bir işlem türünün detaylarını içeren bir nesne\n\n\nconst typeLookup = {\n    trash: {\n        text: \"Silmek\", //her işlemin anlamını\n        requireArgs: [\"id\"]  //işlemlerin argümanlarını\n    },\n    complete: {\n        text: \"Tamamlamak\",  // 'complete' işlem türünün anlamlı açıklaması\n        requireArgs: [\"id\"] // 'complete' işlem türü için gereken argümanlar: sadece 'id'\n    },\n    open: {\n        text: \"Açmak\",\n        requireArgs: [\"id\"]\n    },\n    add: {\n        text: \"Eklemek\",\n        requireArgs: [\"name\"]\n    },\n    update: {\n        text: \"Güncellemek\",\n        requireArgs: [\"id\", \"name\"]\n    }\n    \n}\n\n\n\nif (!Object.keys(typeLookup).includes(msg.req.params.type)) {  \n\n    msg.error = {\n        message: `${msg.req.params.type} geçersiz bir parametre değeridir.`\n    }\n    return [null, msg];\n}\n\nif (!typeLookup[msg.req.params.type].requireArgs.every(arg => msg.payload[arg])) {  \n\n    msg.error = {\n        message:` ${typeLookup[msg.req.params.type].text } istediğiniz elemanın ${ typeLookup[msg.req.params.type].requireArgs } bilgi(leri) olmalı` //typeLookup ın içinden mesajın requestinde bulunan parametrelerden type olanı al buraya yaz\n}\n\nreturn [null, msg]\n\n }\n\n\n\nreturn msg;\n",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 640,
+        "wires": [
+            [
+                "b79d17467522ce16"
+            ],
+            [
+                "65b765dd70078f1f"
+            ]
+        ],
+        "outputLabels": [
+            "Valid",
+            "Invalid"
+        ]
+    },
+    {
+        "id": "65b765dd70078f1f",
+        "type": "link out",
+        "z": "c6e2056fe0d030af",
+        "name": "link out 8",
+        "mode": "link",
+        "links": [
+            "fd9a539031eaf6d8",
+            "4a0bd336ab25926b"
+        ],
+        "x": 845,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "aff72e95f0bc5a62",
+        "type": "link out",
+        "z": "c6e2056fe0d030af",
+        "name": "link out 9",
+        "mode": "link",
+        "links": [
+            "fd9a539031eaf6d8",
+            "4a0bd336ab25926b"
+        ],
+        "x": 1465,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "164ba4e813219381",
+        "type": "function",
+        "z": "c6e2056fe0d030af",
+        "name": "db.todo.findOne()",
+        "func": "msg.formData = msg.payload\nmsg.payload = [\n    {\n        _id: msg.formData.id || msg.req.params.id\n    },\n    {\n        projection: {\n            password: 0\n        }\n    }\n]\n\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 460,
+        "wires": [
+            [
+                "67283bf5a4e52195"
+            ]
+        ],
+        "outputLabels": [
+            "Succ"
+        ]
+    },
+    {
+        "id": "373d43f8eacc5ebd",
+        "type": "http in",
+        "z": "c6e2056fe0d030af",
+        "name": "",
+        "url": "/edit/:id",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 450,
+        "y": 460,
+        "wires": [
+            [
+                "6fb9345493cd450e"
+            ]
+        ]
+    },
+    {
+        "id": "eca6a14dd059b3fa",
+        "type": "template",
+        "z": "c6e2056fe0d030af",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "html",
+        "syntax": "mustache",
+        "template": "<!DOCTYPE html>\n<html lang=\"tr\">\n\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Yapılacaklar Listesi</title>\n    <link rel=\"stylesheet\" href=\"/css/bootstrap.min.css\">\n    <link rel=\"stylesheet\" href=\"/font/bootstrap-icons.min.css\">\n    <style>\n        * {\n            margin: 0;\n            padding: 0;\n            box-sizing: border-box;\n        }\n\n        :root {\n            --background: #000430;\n            --secondaryBackground: #171c48;\n            --text: #fff;\n            --purple: #828dff;\n            --teal: #24feee;\n        }\n\n        body {\n            background-color: var(--background);\n            /* Koyu arka plan */\n            color: var(--text);\n            /* Beyaz metin rengi */\n            display: flex;\n            justify-content: center;\n            align-items: center;\n            height: 100vh;\n            margin: 0;\n            font-family: Arial, sans-serif;\n        }\n\n        .centered-form {\n            background-color: var(--secondaryBackground);\n            padding: 40px;\n            border-radius: 10px;\n            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);\n            width: 100%;\n            max-width: 500px;\n        }\n\n        .btn-custom {\n            background-color: var(--purple);\n            /* Mor */\n            color: var(--text);\n            /* Beyaz metin */\n            border: none;\n            width: 48px;\n            /* Butonların genişliği */\n            height: 48px;\n            /* Butonların yüksekliği */\n            border-radius: 5px;\n            cursor: pointer;\n            transition: background-color 0.3s ease;\n            margin-right: 10px;\n            /* Butonlar arası mesafe */\n            display: flex;\n            justify-content: center;\n            align-items: center;\n        }\n\n        .btn-custom:last-child {\n            margin-right: 0;\n            /* Son butonda sağ margin olmasın */\n        }\n\n        .btn-custom:hover {\n            background-color: #6b79ff;\n            /* Daha koyu mor */\n        }\n\n        .form-control {\n            background-color: var(--secondaryBackground);\n            border: 1px solid var(--purple);\n            border-radius: 5px;\n            color: var(--text);\n            margin-bottom: 20px;\n            padding: 10px;\n        }\n\n        .btn-group {\n            display: flex;\n            justify-content: space-between;\n        }\n\n        .alert {\n            background-color: #dc3545;\n            color: #fff;\n            border-radius: 5px;\n            padding: 15px;\n            margin-bottom: 20px;\n        }\n    </style>\n</head>\n\n<body>\n    <div class=\"centered-form\">\n        {{#error}}\n        <div class=\"alert alert-danger\">\n            <h4>{{message}}</h4>\n        </div>\n        {{/error}}\n\n        <form action=\"/opt/update\" method=\"POST\">\n            <input type=\"hidden\" name=\"id\" value=\"{{payload._id}}\" />\n            <div class=\"mb-3\">\n                <input required name=\"name\" value=\"{{payload.name}}\" class=\"form-control form-control-lg {{#error}}border-danger{{/error}} {{^error}}border-info{{/error}}\" type=\"text\" placeholder=\"Planınızı giriniz\" />\n            </div>\n\n            <div class=\"btn-group\">\n                <a class=\"btn btn-custom\" href=\"/\" data-bs-toggle=\"tooltip\" title=\"Vazgeç\">\n                    <i class=\"bi bi-x-circle\"></i></a>\n                <button type=\"reset\" class=\"btn btn-custom\" data-bs-toggle=\"tooltip\" title=\"Temizle\"><i class=\"bi bi-trash3-fill\"></i></button>\n                <button class=\"btn btn-custom\" type=\"submit\" data-bs-toggle=\"tooltip\" title=\"Güncelle\"><i class=\"bi bi-check-square\"></i></button>\n            </div>\n        </form>\n    </div>\n\n    <script src=\"/js/bootstrap.bundle.min.js\"></script>\n    <script>\n        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle=\"tooltip\"]');\n        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));\n    </script>\n</body>\n\n</html>",
+        "output": "str",
+        "x": 1440,
+        "y": 440,
+        "wires": [
+            [
+                "a5927c6acba6efc6"
+            ]
+        ]
+    },
+    {
+        "id": "0db87c94349cbd1b",
+        "type": "link out",
+        "z": "c6e2056fe0d030af",
+        "name": "link out 10",
+        "mode": "link",
+        "links": [
+            "fd9a539031eaf6d8",
+            "4a0bd336ab25926b"
+        ],
+        "x": 1395,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "a5927c6acba6efc6",
+        "type": "http response",
+        "z": "c6e2056fe0d030af",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1570,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "43c55772a301e090",
+        "type": "http in",
+        "z": "c6e2056fe0d030af",
+        "name": "",
+        "url": "/user-list",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 310,
+        "y": 800,
+        "wires": [
+            [
+                "563d26356a37447f"
+            ]
+        ]
+    },
+    {
+        "id": "0ee98ba745cad4a8",
+        "type": "http response",
+        "z": "c6e2056fe0d030af",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1470,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "138b8e787ed673b0",
+        "type": "template",
+        "z": "c6e2056fe0d030af",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "html",
+        "syntax": "mustache",
+        "template": "<!DOCTYPE html>\n<html lang=\"tr\">\n\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Kullanıcı Listesi</title>\n    <link rel=\"stylesheet\" href=\"/css/bootstrap.min.css\">\n    <link rel=\"stylesheet\" href=\"/font/bootstrap-icons.min.css\">\n    <style>\n        * {\n            margin: 0;\n            padding: 0;\n            box-sizing: border-box;\n        }\n\n        :root {\n            --background: #000430;\n            --secondaryBackground: #171c48;\n            --text: #fff;\n            --purple: #828dff;\n            --teal: #24feee;\n        }\n\n        body {\n            background-color: var(--background);\n            /* Koyu arka plan */\n            font-family: Arial, sans-serif;\n            color: var(--text);\n            /* Beyaz metin rengi */\n            margin: 0;\n            padding: 0;\n        }\n\n        .container {\n            margin-top: 30px;\n        }\n\n        .card {\n            background-color: var(--secondaryBackground);\n            border: 1px solid var(--purple);\n            border-radius: 10px;\n            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n        }\n\n        .card-header {\n            /* background-color: var(--purple); */\n            color: var(--text);\n            padding: 1rem;\n            border-bottom: 1px solid var(--purple);\n            border-radius: 10px 10px 0 0;\n        }\n\n        .btn-custom {\n            background-color: var(--purple);\n            /* Mor */\n            color: var(--text);\n            /* Beyaz metin */\n            border: none;\n            border-radius: 5px;\n            padding: 10px 20px;\n            cursor: pointer;\n            transition: background-color 0.3s ease;\n        }\n\n        .btn-custom:hover {\n            background-color: #6b79ff;\n            /* Daha koyu mor */\n        }\n\n        .alert-custom {\n            background-color: #ffe5e5;\n            color: #b30000;\n            border-radius: 5px;\n            padding: 15px;\n            margin-bottom: 20px;\n        }\n\n        .badge-custom {\n            background-color: var(--purple);\n            /* Mor */\n            color: var(--text);\n        }\n\n        .table thead {\n            background-color: var(--secondaryBackground);\n            color: var(--text);\n        }\n\n        .table tbody tr:hover {\n            background-color: #1d2752;\n        }\n\n        .table tbody td {\n            color: var(--text);\n        }\n\n        .btn-group {\n            display: flex;\n            justify-content: space-between;\n        }\n\n        .btn-group .btn {\n            flex: 1;\n            margin: 0 5px;\n        }\n\n        .position-fixed {\n            position: fixed;\n        }\n\n        .bottom-0 {\n            bottom: 0;\n        }\n\n        .end-0 {\n            right: 0;\n        }\n\n        .top-0 {\n            top: 0;\n        }\n\n        .mx-5 {\n            margin-left: 3rem;\n            margin-right: 3rem;\n        }\n\n        .shadow {\n            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);\n        }\n\n        .btn-lg {\n            font-size: 1.25rem;\n            padding: 0.75rem 1.25rem;\n        }\n\n        .text-muted {\n            color: var(--text) !important;\n        }\n\n        .text-center {\n            text-align: center;\n        }\n        .user-info {\n        display: flex;\n        align-items: center;\n        gap: 10px;\n        padding: 10px;\n        background-color: var(--secondaryBackground);\n        border-radius: 10px;\n        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);\n        border: 1px solid var(--purple);\n        }\n        \n        .user-btn {\n        background-color: var(--purple);\n        color: var(--text);\n        border: none;\n        padding: 10px 20px;\n        border-radius: 10px;\n        font-size: 1em;\n        cursor: pointer;\n        transition: background-color 0.3s;\n        }\n       \n        \n        .user-btn:hover {\n        background-color: #6b79ff;\n        }\n        \n        .logout-btn {\n        background-color: #343a40;\n        color: var(--text);\n        border: none;\n        padding: 10px 15px;\n        border-radius: 10px;\n        font-size: 1em;\n        cursor: pointer;\n        transition: background-color 0.3s;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        }\n        \n        .logout-btn:hover {\n        background-color: #495057;\n        }\n        \n        .position-fixed {\n        position: fixed;\n        }\n        \n        .top-0 {\n        top: 0;\n        }\n        \n        .end-0 {\n        right: 0;\n        }\n        \n        .mx-5 {\n        margin-left: 3rem !important;\n        margin-right: 3rem !important;\n        }\n    </style>\n</head>\n\n<body>\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-md-8 offset-md-2\">\n                {{#error}}\n                <div class=\"alert alert-custom\">\n                    <h4>{{message}}</h4>\n                </div>\n                {{/error}}\n\n                <div class=\"card\">\n                    <div class=\"card-header\">\n                        <h2>Kullanıcı Ekle</h2>\n                    </div>\n                    <div class=\"card-body\">\n                        <form action=\"/user-opt/add\" method=\"POST\">\n                            <div class=\"mb-3\">\n                                <input required name=\"username\" value=\"{{error.formData.username}}\" class=\"form-control {{#error}}border-danger{{/error}}\" type=\"text\" placeholder=\"Kullanıcı adı\" />\n                            </div>\n                            <div class=\"mb-3\">\n                                <input required name=\"password\" value=\"{{error.formData.password}}\" type=\"password\" class=\"form-control {{#error}}border-danger{{/error}}\" placeholder=\"Parola\" />\n                            </div>\n                            <div class=\"mb-3\">\n                                <input required name=\"email\" value=\"{{error.formData.email}}\" class=\"form-control {{#error}}border-danger{{/error}}\" type=\"email\" placeholder=\"E-posta\" />\n                            </div>\n                            <div class=\"d-flex justify-content-between\">\n                                <button type=\"reset\" class=\"btn btn-custom\">Temizle</button>\n                                <button class=\"btn btn-custom\" type=\"submit\">Ekle</button>\n                            </div>\n                        </form>\n                    </div>\n                </div>\n\n                <div class=\"card mt-4\">\n                    <div class=\"card-header\">\n                        <h2>Kullanıcı Listesi</h2>\n                    </div>\n                    <div class=\"card-body p-0\">\n                        <div class=\"table-responsive\">\n                            <table class=\"table table-hover m-0\">\n                                <thead>\n                                    <tr>\n                                        <th>Kullanıcı Adı</th>\n                                        <th></th>\n                                        <th>E-posta</th>\n                                        <th></th>\n                                    </tr>\n                                </thead>\n                                <tbody>\n                                    {{#payload}}\n                                    <tr valign=\"middle\">\n                                        <td>\n                                            {{#active}}\n                                            <h4>{{#hasAdmin}} <i class=\"bi bi-incognito\"></i> {{/hasAdmin}}{{username}}\n                                            </h4>\n                                            {{/active}}\n                                            {{^active}}\n                                            <h4 class=\"text-muted\"><del>{{#hasAdmin}}\n                                                    <i class=\"bi bi-incognito\"></i>{{/hasAdmin}} {{username}}</del></h4>\n                                            {{/active}}\n                                            <div class=\"badge badge-custom\">\n                                                <small><i class=\"bi bi-calendar\"></i> {{date}} {{time}}</small>\n                                            </div>\n                                        </td>\n                                        <td>{{displayName}}</td>\n                                        <td>{{email}}</td>\n                                        <td class=\"text-end\">\n                                            <a data-bs-toggle=\"tooltip\" data-bs-title=\"Düzenle\"\n                                                href=\"/user-edit/{{_id}}\" class=\"btn btn-custom\">\n                                                <i class=\"bi bi-pencil-fill\"></i>\n                                            </a>\n                                        </td>\n                                    </tr>\n                                    {{/payload}}\n                                    {{^payload}}\n                                    <tr>\n                                        <td colspan=\"4\" class=\"text-muted text-center\">Henüz hiç kullanıcı tanımlanmadı\n                                        </td>\n                                    </tr>\n                                    {{/payload}}\n                                </tbody>\n                            </table>\n                        </div>\n                    </div>\n                </div>\n\n            </div>\n        </div>\n    </div>\n\n    <div class=\"position-fixed bottom-0 end-0 m-4 shadow\">\n        <a href=\"/\" class=\"btn btn-danger btn-lg shadow\">\n            <i class=\"bi bi-card-checklist\"></i>\n        </a>\n    </div>\n\n<div class=\"user-info position-fixed top-0 end-0 mx-5\">\n    <button class=\"user-btn\">{{user.displayName}}  {{user.username}}</button>\n    <a href=\"/logout\" class=\"logout-btn\"><i class=\"bi bi-box-arrow-right\"></i></a>\n</div>\n\n    <script src=\"/js/bootstrap.bundle.min.js\"></script>\n    <script>\n        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle=\"tooltip\"]');\n        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));\n    </script>\n</body>\n\n</html>",
+        "output": "str",
+        "x": 1300,
+        "y": 800,
+        "wires": [
+            [
+                "0ee98ba745cad4a8"
+            ]
+        ]
+    },
+    {
+        "id": "cb4de059da20f8eb",
+        "type": "function",
+        "z": "c6e2056fe0d030af",
+        "name": "db.user.find()",
+        "func": "msg.payload=[[\n     {\n        $match: {}  //match veritabanın da filtreleme işlemi yapar\n                    //ama {} obje seçildiğinden bütün kullanıcıları getirir\n    },\n    {\n        $sort: {\n            \"stamp.createdAt\": -1  //stamp.created alanına göre azalan sırada sıralama yapılır\n        }\n    },\n    {\n        $addFields: { //mevcut belgelere yeni alan ekler\n            hasAdmin: {\n                $cond: [{$eq:[\"$roles\" , \"admin\"] }, true, false] //roles alanı admin mi kontrol eder eğer adminse true değilse false döner\n            }\n        }\n    }\n]]\n\nreturn msg;\n\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 800,
+        "wires": [
+            [
+                "55e3b4cd29586c5c"
+            ]
+        ]
+    },
+    {
+        "id": "b08a0a81872c0e35",
+        "type": "http in",
+        "z": "c6e2056fe0d030af",
+        "name": "",
+        "url": "/user-opt/:type",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 290,
+        "y": 1060,
+        "wires": [
+            [
+                "adcee89d27743177"
+            ]
+        ]
+    },
+    {
+        "id": "5aaddd96e3e4c757",
+        "type": "function",
+        "z": "c6e2056fe0d030af",
+        "name": "db.user.opt()",
+        "func": "const date = new Date();\nconst now = date.getTime();\n\n// Ekleme işlemi\nif (msg.req.params.type === \"add\") {\n    msg.payload = {\n        id: now,\n        active: true,\n        stamp: {\n            createAt: now,\n            ip: msg.req.ip,\n            username: msg.user.username || \"\",\n            email: msg.user.email || \"\"\n        },\n        roles: [\"user\"],\n        date: date.toLocaleDateString(\"TR\"),\n        time: date.toLocaleTimeString(\"TR\"),\n        ...msg.formData\n    };\n    return msg\n}\n\nmsg.payload = [{\n    _id: msg.formData.id\n}]\nreturn [null, msg]\n\n",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1570,
+        "y": 1020,
+        "wires": [
+            [
+                "15897bb083bc1cd6"
+            ],
+            [
+                "ac08803ead4319af"
+            ]
+        ],
+        "outputLabels": [
+            "Succ",
+            "Err"
+        ]
+    },
+    {
+        "id": "7b73b43b16908d96",
+        "type": "http response",
+        "z": "c6e2056fe0d030af",
+        "name": "",
+        "statusCode": "302",
+        "headers": {
+            "location": "/user-list"
+        },
+        "x": 1900,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "3e428b83a4977b74",
+        "type": "function",
+        "z": "c6e2056fe0d030af",
+        "name": "validation",
+        "func": "\nconst typeLookup = {\n    add: {\n        text: \"Eklemek\",\n        requireArgs: [\"username\", \"password\", \"email\"] ,\n        validation: {\n           email(data, formData) {\n                return /^\\w+([\\.-]?\\w+)*@\\w+([\\.-]?\\w+)*(\\.\\w{2,3})+$/.test(data) }\n   \n        }\n    },\n    update: {\n        text: \"Güncellemek\",\n        requireArgs: [\"id\", \"username\", \"password\", \"email\", \"roles\"],\n        validation: {\n           email(data, formData) {\n                return /^\\w+([\\.-]?\\w+)*@\\w+([\\.-]?\\w+)*(\\.\\w{2,3})+$/.test(data) }\n   \n        }\n    }\n}\n\n\nif (!Object.keys(typeLookup).includes(msg.req.params.type)) {\n    msg.error = {\n        message: `${msg.req.params.type} geçersiz bir parametre değeridir.`,\n                formData: msg.formData\n\n    }\n    return msg.req.headers.referer.includes(\"user-edit\") ?  [null,null,msg]: [null,msg]\n}\n\nlet fields= Object.keys(msg.payload)\n\n// İlgili işlem türü için gereken argümanların 'msg.payload' içinde bulunup bulunmadığını kontrol ediyor\nif (!typeLookup[msg.req.params.type].requireArgs.every (arg => {\n    return ((typeLookup[msg.req.params.type].validation && typeLookup[msg.req.params.type].validation[arg])\n        ? typeLookup[msg.req.params.type].validation[arg](msg.payload[arg], msg.payload)\n        : true) && arg.startsWith(\"!\") ? !fields.includes(arg.substr(1)) : fields.includes(arg)\n  })) {\n    msg.error = {\n        message: `${typeLookup[msg.req.params.type].text} istediğiniz elemanın ${typeLookup[msg.req.params.type].requireArgs}  bilgileri eksik.`,\n                formData: msg.formData\n\n    }\n    msg.referer=msg.req.headers.referer\n    return msg.req.headers.referer.includes(\"user-edit\") ?  [null,null,msg]: [null,msg]\n}\n\n\nmsg.payload.roles=Array.isArray(msg.payload.roles) ? msg.payload.roles : [msg.payload.roles]\nmsg.formData =msg.payload\nreturn msg;\n\n\n\n\n\n\n\n\n\n",
+        "outputs": 3,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 1060,
+        "wires": [
+            [
+                "2eb3403f5559dfd4"
+            ],
+            [
+                "d1c1f8cc7cb03ce0"
+            ],
+            [
+                "12415f955522137b"
+            ]
+        ],
+        "outputLabels": [
+            "Valid",
+            "Invalid",
+            ""
+        ]
+    },
+    {
+        "id": "7e2c8ab17b44e66b",
+        "type": "link in",
+        "z": "c6e2056fe0d030af",
+        "name": "link in 3",
+        "links": [
+            "d1c1f8cc7cb03ce0",
+            "bf41a9e500979582",
+            "30a33adebccef4e0",
+            "cc68af8039df7a80"
+        ],
+        "x": 405,
+        "y": 760,
+        "wires": [
+            [
+                "563d26356a37447f"
+            ]
+        ]
+    },
+    {
+        "id": "d1c1f8cc7cb03ce0",
+        "type": "link out",
+        "z": "c6e2056fe0d030af",
+        "name": "link out 15",
+        "mode": "link",
+        "links": [
+            "7e2c8ab17b44e66b"
+        ],
+        "x": 995,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "bf41a9e500979582",
+        "type": "link out",
+        "z": "c6e2056fe0d030af",
+        "name": "link out 16",
+        "mode": "link",
+        "links": [
+            "7e2c8ab17b44e66b"
+        ],
+        "x": 2065,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "73ca1d1ea55f8afa",
+        "type": "bcrypt",
+        "z": "c6e2056fe0d030af",
+        "name": "",
+        "action": "encrypt",
+        "field": "formData.password",
+        "hash": "payload",
+        "target": "formData.password",
+        "assignment": "assign",
+        "match": "match",
+        "outputs": 1,
+        "rounds": 10,
+        "x": 1570,
+        "y": 900,
+        "wires": [
+            [
+                "5aaddd96e3e4c757"
+            ]
+        ]
+    },
+    {
+        "id": "b74e71650c0d2b7e",
+        "type": "function",
+        "z": "c6e2056fe0d030af",
+        "name": "db.user.findOne()",
+        "func": "msg.formData=msg.payload \nmsg.payload= [\n  {\n        _id: msg.formData.id || msg.req.params.id\n  },\n  {\n    projection: {\n        password: 0\n    }\n  }\n\n]\n\n\nreturn msg\n\n\n\n\n\n\n\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 1240,
+        "wires": [
+            [
+                "92e3168e8133bed7"
+            ]
+        ],
+        "outputLabels": [
+            "Succ"
+        ]
+    },
+    {
+        "id": "34eeb68257d874b1",
+        "type": "http in",
+        "z": "c6e2056fe0d030af",
+        "name": "",
+        "url": "/user-edit/:id",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 300,
+        "y": 1240,
+        "wires": [
+            [
+                "38a8a5d0d718fe22"
+            ]
+        ]
+    },
+    {
+        "id": "42a482b1b1f8bfdd",
+        "type": "template",
+        "z": "c6e2056fe0d030af",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "html",
+        "syntax": "mustache",
+        "template": "<!DOCTYPE html>\n<html lang=\"tr\">\n\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Kullanıcı Bilgilerini Güncelle</title>\n    <link rel=\"stylesheet\" href=\"/css/bootstrap.min.css\">\n    <link rel=\"stylesheet\" href=\"/font/bootstrap-icons.min.css\">\n    <style>\n        * {\n            margin: 0;\n            padding: 0;\n            box-sizing: border-box;\n        }\n\n        :root {\n            --background: #000430;\n            --secondaryBackground: #171c48;\n            --text: #fff;\n            --purple: #828dff;\n            --teal: #24feee;\n            --grey: #6c757d;\n            --darkGrey: #5a6268;\n        }\n\n        body {\n            background-color: var(--background);\n            color: var(--text);\n            font-family: Arial, sans-serif;\n        }\n\n        .container {\n            display: flex;\n            flex-direction: column;\n            align-items: center;\n            justify-content: flex-start;\n            margin: 20px auto;\n            max-width: 800px;\n        }\n\n        .card {\n            background-color: var(--secondaryBackground);\n            border: 1px solid var(--purple);\n            border-radius: 10px;\n            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n            padding: 20px;\n            width: 100%;\n        }\n\n        .card-header {\n            background-color: var(--purple);\n            color: var(--text);\n            padding: 15px;\n            border-bottom: 1px solid var(--purple);\n            border-radius: 130px;\n            margin-bottom: 20px;\n        }\n\n        .card-header h2 {\n            font-size: 1.25rem;\n\n        }\n\n        .form-label {\n            font-weight: bold;\n        }\n\n        .form-control {\n            background-color: var(--secondaryBackground);\n            border: 1px solid var(--purple);\n            color: var(--text);\n            /* Yazı rengini beyaz yap */\n            border-radius: 10px;\n        }\n\n        .form-control-lg {\n            padding: 1.25rem;\n            font-size: 1rem;\n            /* Yazı boyutunu küçült */\n        }\n\n        .btn-custom {\n            background-color: var(--purple);\n            color: var(--text);\n            border-radius: 5px;\n            padding: 8px 16px;\n            /* Buton boyutunu küçült */\n            cursor: pointer;\n            transition: background-color 0.3s ease, transform 0.3s ease;\n            border: none;\n            font-size: 0.875rem;\n            /* Buton yazı boyutunu küçült */\n            text-align: center;\n        }\n\n        .btn-custom:hover {\n            background-color: #6b79ff;\n            transform: scale(1.05);\n        }\n\n        /* Butonları eşit boyutlandırmak için */\n        .d-flex {\n            display: flex;\n            gap: 10px;\n            /* Butonlar arasındaki boşluk */\n        }\n\n        .d-flex .btn {\n            flex: 1;\n            /* Butonların eşit genişlikte olmasını sağlar */\n        }\n\n        .form-check-label {\n            font-size: 1rem;\n        }\n\n        .form-check-input {\n            margin-top: 0.3rem;\n        }\n\n        .alert-custom {\n            background-color: #ffe5e5;\n            color: #b30000;\n            border-radius: 5px;\n            padding: 15px;\n            margin-bottom: 20px;\n            width: 100%;\n            text-align: center;\n        }\n\n        .mb-3 {\n            margin-bottom: 1rem;\n        }\n\n        .d-flex {\n            display: flex;\n        }\n\n        .justify-content-between {\n            justify-content: space-between;\n        }\n\n        .justify-content-end {\n            justify-content: flex-end;\n        }\n    </style>\n</head>\n\n<body>\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-md-12\">\n                {{#error}}\n                <div class=\"alert alert-custom\">\n                    <h4>{{message}}</h4>\n                </div>\n                {{/error}}\n\n                <div class=\"card\">\n                    <div class=\"card-header\">\n                        <h2>Kullanıcı Bilgilerini Güncelle</h2>\n                    </div>\n                    <form action=\"/user-opt/update\" method=\"POST\">\n                        <input type=\"hidden\" name=\"id\" value=\"{{payload._id}}\" />\n\n                        <div class=\"mb-3\">\n                            <label for=\"username\" class=\"form-label\">Kullanıcı Adı</label>\n                            <input readonly name=\"username\" value=\"{{payload.username}}\" class=\"form-control form-control-lg {{#error}}border-danger{{/error}} {{^error}}border-info{{/error}}\" type=\"text\" placeholder=\"Kullanıcı adı...\" />\n                        </div>\n\n                        <div class=\"mb-3\">\n                            <label for=\"displayName\" class=\"form-label\">İsim Soyisim</label>\n                            <input name=\"displayName\" value=\"{{payload.displayName}}\" class=\"form-control form-control-lg {{#error}}border-danger{{/error}} {{^error}}border-info{{/error}}\" type=\"text\" placeholder=\"İsim Soyisim...\" />\n                        </div>\n\n                        <div class=\"mb-3\">\n                            <label for=\"email\" class=\"form-label\">E-posta Adresi</label>\n                            <input required name=\"email\" value=\"{{payload.email}}\" class=\"form-control form-control-lg {{#error}}border-danger{{/error}} {{^error}}border-info{{/error}}\" type=\"text\" placeholder=\"E-posta adresi...\" />\n                        </div>\n\n                        <div class=\"mb-3\">\n                            <label for=\"password\" class=\"form-label\">Parola</label>\n                        <input  name=\"password\" class=\"form-control form-control-lg {{#error}}border-danger{{/error}} {{^error}}border-info{{/error}}\" type=\"password\" placeholder=\"Parola...\" />\n                        </div>\n\n                        <div class=\"mb-3\">\n                            <div class=\"form-check form-check-inline\">\n                                <input {{#payload.active}} checked{{/payload.active}} class=\"form-check-input\" type=\"radio\" name=\"status\" id=\"active\" value=\"active\">\n                                <label class=\"form-check-label\" for=\"active\">Aktif</label>\n                            </div>\n\n                            <div class=\"form-check form-check-inline\">\n                                <input {{^payload.active}} checked{{/payload.active}} class=\"form-check-input\" type=\"radio\" name=\"status\" id=\"passive\" value=\"passive\">\n                                <label class=\"form-check-label\" for=\"passive\">Pasif</label>\n                            </div>\n                        </div>\n\n                        <div class=\"mb-3\">\n                            <div class=\"form-check form-check-inline\">\n                                <input {{#hasUser}} checked{{/hasUser}} class=\"form-check-input\" type=\"checkbox\" id=\"user\" name=\"roles\" value=\"user\">\n                                <label class=\"form-check-label\" for=\"user\">Standart Kullanıcı</label>\n                            </div>\n                            <div class=\"form-check form-check-inline\">\n                                <input {{#hasAdmin}} checked{{/hasAdmin}} class=\"form-check-input\" type=\"checkbox\" name=\"roles\" id=\"admin\" value=\"admin\">\n                                <label class=\"form-check-label\" for=\"admin\">Yetkili Kullanıcı</label>\n                            </div>\n                        </div>\n\n                        <div class=\"mb-3 d-flex justify-content-end\">\n                            <a class=\"btn btn-custom\" href=\"/user-list\">Vazgeç</a>\n                            <button type=\"reset\" class=\"btn btn-custom\">Temizle</button>\n                            <button class=\"btn btn-custom\" type=\"submit\">Güncelle</button>\n                        </div>\n                    </form>\n                </div>\n            </div>\n        </div>\n    </div>\n\n    <script src=\"/js/bootstrap.bundle.min.js\"></script>\n    <script>\n        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle=\"tooltip\"]');\n        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));\n    </script>\n</body>\n\n</html>",
+        "output": "str",
+        "x": 1520,
+        "y": 1240,
+        "wires": [
+            [
+                "c51775cb0cb0d281"
+            ]
+        ]
+    },
+    {
+        "id": "c51775cb0cb0d281",
+        "type": "http response",
+        "z": "c6e2056fe0d030af",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1670,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "30a33adebccef4e0",
+        "type": "link out",
+        "z": "c6e2056fe0d030af",
+        "name": "link out 17",
+        "mode": "link",
+        "links": [
+            "7e2c8ab17b44e66b"
+        ],
+        "x": 1525,
+        "y": 1320,
+        "wires": []
+    },
+    {
+        "id": "95c8d588bf7703fa",
+        "type": "link in",
+        "z": "c6e2056fe0d030af",
+        "name": "link in 4",
+        "links": [
+            "12415f955522137b",
+            "0bfce6d5d69fa215"
+        ],
+        "x": 385,
+        "y": 1340,
+        "wires": [
+            [
+                "38a8a5d0d718fe22"
+            ]
+        ]
+    },
+    {
+        "id": "12415f955522137b",
+        "type": "link out",
+        "z": "c6e2056fe0d030af",
+        "name": "link out 18",
+        "mode": "link",
+        "links": [
+            "95c8d588bf7703fa"
+        ],
+        "x": 965,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "7d4f7e3c17412d1f",
+        "type": "function",
+        "z": "c6e2056fe0d030af",
+        "name": "function 1",
+        "func": "if(msg.formData.password) return msg\ndelete msg.formData.password\nreturn [null,msg]\n\n",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1400,
+        "y": 960,
+        "wires": [
+            [
+                "73ca1d1ea55f8afa"
+            ],
+            [
+                "5aaddd96e3e4c757"
+            ]
+        ]
+    },
+    {
+        "id": "3ea07fd4b901b095",
+        "type": "http in",
+        "z": "c6e2056fe0d030af",
+        "name": "",
+        "url": "/login",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 320,
+        "y": 1520,
+        "wires": [
+            [
+                "59ed26104f163096"
+            ]
+        ]
+    },
+    {
+        "id": "14c0f221a66eb59c",
+        "type": "template",
+        "z": "c6e2056fe0d030af",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<!DOCTYPE html>\n<html lang=\"tr\">\n\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Giriş Yap</title>\n    <link rel=\"stylesheet\" href=\"/css/bootstrap.min.css\">\n    <link rel=\"stylesheet\" href=\"/font/bootstrap-icons.min.css\">\n    <style>\n        * {\n            margin: 0;\n            padding: 0;\n            box-sizing: border-box;\n        }\n\n        :root {\n            --background: #000430;\n            --secondaryBackground: #171c48;\n            --text: #fff;\n            --purple: #828dff;\n            --teal: #24feee;\n            --grey: #6c757d;\n            --darkGrey: #5a6268;\n        }\n\n        body {\n            background-color: var(--background);\n            display: flex;\n            justify-content: center;\n            align-items: center;\n            height: 100vh;\n            margin: 0;\n            font-family: Arial, sans-serif;\n        }\n\n        .login-container {\n            background-color: var(--secondaryBackground);\n            padding: 40px;\n            border-radius: 10px;\n            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n            text-align: center;\n            max-width: 400px;\n            width: 100%;\n            border: 1px solid var(--purple);\n        }\n\n        .login-container h2 {\n            margin-bottom: 20px;\n            font-weight: bold;\n            color: var(--text);\n        }\n\n        .login-container .form-group {\n            margin-bottom: 15px;\n            text-align: left;\n        }\n\n        .login-container .form-group label {\n            font-weight: bold;\n            color: var(--text);\n        }\n\n        .login-container .form-control {\n            background-color: var(--secondaryBackground);\n            border: 1px solid var(--purple);\n            color: var(--text);\n            border-radius: 10px;\n        }\n\n        .login-container .btn-block {\n            background-color: var(--purple);\n            color: var(--text);\n            border: none;\n            padding: 10px;\n            border-radius: 10px;\n            font-size: 16px;\n            cursor: pointer;\n        }\n\n        .login-container .btn-block:hover {\n            background-color: #6b79ff; /* Daha açık mor */\n        }\n\n        .login-container .alert {\n            border-radius: 10px;\n            background-color: #ffe5e5;\n            color: #b30000;\n        }\n    </style>\n</head>\n\n<body>\n    <div class=\"login-container\">\n        <h2>Giriş Yap</h2>\n        {{#error}}\n        <div class=\"alert alert-custom mb-3 shadow\">\n            {{message}}\n        </div>\n        {{/error}}\n        <form action=\"/login\" method=\"post\">\n            <div class=\"form-group\">\n                <label for=\"username\">Kullanıcı Adı</label>\n                <input required name=\"username\" id=\"username\" class=\"form-control\" value=\"{{payload.username}}\" type=\"text\" placeholder=\"Kullanıcı Adı\">\n            </div>\n            <div class=\"form-group\">\n                <label for=\"password\">Parola</label>\n                <input required name=\"password\" id=\"password\" class=\"form-control\" value=\"{{payload.password}}\" type=\"password\" placeholder=\"Parola\">\n            </div>\n            <button value=\"Giriş\" class=\"btn btn-block login\" type=\"submit\">Giriş</button>\n            \n         \n\n        </form>\n         {{!-- <a href=\"/register\">\n            <button value=\"üyeol\" class=\"btn btn-block login\" type=\"submit\">Üye Ol</button>\n           </a> --}}\n\n\n     \n    </div>\n</body>\n\n</html>\n",
+        "output": "str",
+        "x": 710,
+        "y": 1520,
+        "wires": [
+            [
+                "24ef26c3086fa796"
+            ]
+        ]
+    },
+    {
+        "id": "24ef26c3086fa796",
+        "type": "http response",
+        "z": "c6e2056fe0d030af",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 930,
+        "y": 1520,
+        "wires": []
+    },
+    {
+        "id": "59ed26104f163096",
+        "type": "template",
+        "z": "c6e2056fe0d030af",
+        "name": "css",
+        "field": "css",
+        "fieldType": "msg",
+        "format": "css",
+        "syntax": "plain",
+        "template": "body{background: #eee url(http://subtlepatterns.com/patterns/sativa.png);}\nhtml,body{\n    position: relative;\n    height: 100%;\n}\n\n.login-container{\n    position: relative;\n    width: 300px;\n    margin: 80px auto;\n    padding: 20px 40px 40px;\n    text-align: center;\n    background: #fff;\n    border: 1px solid #ccc;\n}\n\n#output{\n    position: absolute;\n    width: 300px;\n    top: -75px;\n    left: 0;\n    color: #fff;\n}\n\n#output.alert-success{\n    background: rgb(25, 204, 25);\n}\n\n#output.alert-danger{\n    background: rgb(228, 105, 105);\n}\n\n\n.login-container::before,.login-container::after{\n    content: \"\";\n    position: absolute;\n    width: 100%;height: 100%;\n    top: 3.5px;left: 0;\n    background: #fff;\n    z-index: -1;\n    -webkit-transform: rotateZ(4deg);\n    -moz-transform: rotateZ(4deg);\n    -ms-transform: rotateZ(4deg);\n    border: 1px solid #ccc;\n\n}\n\n.login-container::after{\n    top: 5px;\n    z-index: -2;\n    -webkit-transform: rotateZ(-2deg);\n     -moz-transform: rotateZ(-2deg);\n      -ms-transform: rotateZ(-2deg);\n\n}\n\n.avatar{\n    width: 100px;height: 100px;\n    margin: 10px auto 30px;\n    border-radius: 100%;\n    border: 2px solid #aaa;\n    background-size: cover;\n}\n\n.form-box input{\n    width: 100%;\n    padding: 10px;\n    text-align: center;\n    height:40px;\n    border: 1px solid #ccc;;\n    background: #fafafa;\n    transition:0.2s ease-in-out;\n\n}\n\n.form-box input:focus{\n    outline: 0;\n    background: #eee;\n}\n\n.form-box input[type=\"text\"]{\n    border-radius: 5px 5px 0 0;\n    text-transform: lowercase;\n}\n\n.form-box input[type=\"password\"]{\n    border-radius: 0 0 5px 5px;\n    border-top: 0;\n}\n\n.form-box button.login{\n    margin-top:15px;\n    padding: 10px 20px;\n}\n\n.animated {\n  -webkit-animation-duration: 1s;\n  animation-duration: 1s;\n  -webkit-animation-fill-mode: both;\n  animation-fill-mode: both;\n}\n\n@-webkit-keyframes fadeInUp {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateY(20px);\n    transform: translateY(20px);\n  }\n\n  100% {\n    opacity: 1;\n    -webkit-transform: translateY(0);\n    transform: translateY(0);\n  }\n}\n\n@keyframes fadeInUp {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateY(20px);\n    -ms-transform: translateY(20px);\n    transform: translateY(20px);\n  }\n\n  100% {\n    opacity: 1;\n    -webkit-transform: translateY(0);\n    -ms-transform: translateY(0);\n    transform: translateY(0);\n  }\n}\n\n.fadeInUp {\n  -webkit-animation-name: fadeInUp;\n  animation-name: fadeInUp;\n}\n",
+        "output": "str",
+        "x": 510,
+        "y": 1520,
+        "wires": [
+            [
+                "14c0f221a66eb59c"
+            ]
+        ]
+    },
+    {
+        "id": "f58ec8e7f7e06a6e",
+        "type": "http in",
+        "z": "c6e2056fe0d030af",
+        "name": "",
+        "url": "/login",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 330,
+        "y": 1720,
+        "wires": [
+            [
+                "311884ff030c4f97"
+            ]
+        ]
+    },
+    {
+        "id": "7ab9d53747a32783",
+        "type": "jwt sign",
+        "z": "c6e2056fe0d030af",
+        "name": "",
+        "alg": "HS256",
+        "exp": 3600,
+        "jwkurl": "",
+        "jwkkid": "",
+        "secret": "123456",
+        "key": "",
+        "signvar": "payload",
+        "storetoken": "payload",
+        "x": 1520,
+        "y": 1700,
+        "wires": [
+            [
+                "4b1bd89d73def9dc"
+            ]
+        ]
+    },
+    {
+        "id": "ecf5e98ad15024e2",
+        "type": "function",
+        "z": "c6e2056fe0d030af",
+        "name": "function 2",
+        "func": "if(!msg.match) {\n    msg.error={\n        message:\"Kullanıcı adı ve parola hatalı.\"\n    }\n    return [null,msg]\n}\n\n\nmsg.payload={\n    username: msg.user.username,\n    email:msg.user.email,\n    displayName: msg.user.displayName,\n    roles:msg.user.roles,\n    ip:msg.req.ip\n}\n\nreturn msg;",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1360,
+        "y": 1700,
+        "wires": [
+            [
+                "7ab9d53747a32783"
+            ],
+            [
+                "983b54b16c6f50b3"
+            ]
+        ]
+    },
+    {
+        "id": "311884ff030c4f97",
+        "type": "function",
+        "z": "c6e2056fe0d030af",
+        "name": "findUser",
+        "func": "if(!msg.payload.username || !msg.payload.password) {\n    msg.error = {\n        message: \"Kullanıcı adı ve parola doldurulmalıdır\"\n    }\n    return [null,msg]\n}\n\nmsg.formData=msg.payload //msg.payload değerini msg.formdata alanına kopyalar\nmsg.payload={\n    username: msg.payload.username  //msg.payload alanını sadece username içerecek şekilde günceller\n}\n\n\n\n\nreturn msg;",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 1720,
+        "wires": [
+            [
+                "d9022720f1d118d0"
+            ],
+            [
+                "b1ab3602c503b908"
+            ]
+        ]
+    },
+    {
+        "id": "aab53ab5e5ac9751",
+        "type": "bcrypt",
+        "z": "c6e2056fe0d030af",
+        "name": "",
+        "action": "verify",
+        "field": "formData.password",
+        "hash": "user.password",
+        "target": "payload",
+        "assignment": "replace",
+        "match": "match",
+        "outputs": 1,
+        "rounds": 10,
+        "x": 1200,
+        "y": 1700,
+        "wires": [
+            [
+                "ecf5e98ad15024e2"
+            ]
+        ]
+    },
+    {
+        "id": "4b1bd89d73def9dc",
+        "type": "function",
+        "z": "c6e2056fe0d030af",
+        "name": "function 3",
+        "func": "msg.cookies={\n    \n    token:msg.payload\n    \n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1700,
+        "y": 1700,
+        "wires": [
+            [
+                "37cb07a181cfce3c"
+            ]
+        ]
+    },
+    {
+        "id": "37cb07a181cfce3c",
+        "type": "http response",
+        "z": "c6e2056fe0d030af",
+        "name": "",
+        "statusCode": "302",
+        "headers": {
+            "location": "/"
+        },
+        "x": 1900,
+        "y": 1700,
+        "wires": []
+    },
+    {
+        "id": "72eb7c9f1739059d",
+        "type": "link in",
+        "z": "c6e2056fe0d030af",
+        "name": "link in 5",
+        "links": [
+            "45a51a760ebf02cd",
+            "983b54b16c6f50b3",
+            "b1ab3602c503b908"
+        ],
+        "x": 395,
+        "y": 1580,
+        "wires": [
+            [
+                "59ed26104f163096"
+            ]
+        ]
+    },
+    {
+        "id": "b1ab3602c503b908",
+        "type": "link out",
+        "z": "c6e2056fe0d030af",
+        "name": "link out 19",
+        "mode": "link",
+        "links": [
+            "72eb7c9f1739059d"
+        ],
+        "x": 695,
+        "y": 1780,
+        "wires": []
+    },
+    {
+        "id": "983b54b16c6f50b3",
+        "type": "link out",
+        "z": "c6e2056fe0d030af",
+        "name": "link out 20",
+        "mode": "link",
+        "links": [
+            "72eb7c9f1739059d"
+        ],
+        "x": 1445,
+        "y": 1780,
+        "wires": []
+    },
+    {
+        "id": "4984f34159e8ea3e",
+        "type": "subflow:78b14acfd61617f6",
+        "z": "c6e2056fe0d030af",
+        "name": "",
+        "x": 650,
+        "y": 300,
+        "wires": [
+            [
+                "e3e955e30e316a5e"
+            ]
+        ]
+    },
+    {
+        "id": "05049e84d9bae823",
+        "type": "http in",
+        "z": "c6e2056fe0d030af",
+        "name": "",
+        "url": "/logout",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 330,
+        "y": 1880,
+        "wires": [
+            [
+                "8a10c10e1d761097"
+            ]
+        ]
+    },
+    {
+        "id": "1ce974eef90e8abe",
+        "type": "http response",
+        "z": "c6e2056fe0d030af",
+        "name": "",
+        "statusCode": "302",
+        "headers": {
+            "location": "/login"
+        },
+        "x": 760,
+        "y": 1880,
+        "wires": []
+    },
+    {
+        "id": "8a10c10e1d761097",
+        "type": "function",
+        "z": "c6e2056fe0d030af",
+        "name": "function 6",
+        "func": "msg.cookies ={\n    token:null\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 1880,
+        "wires": [
+            [
+                "1ce974eef90e8abe"
+            ]
+        ]
+    },
+    {
+        "id": "6fb9345493cd450e",
+        "type": "subflow:78b14acfd61617f6",
+        "z": "c6e2056fe0d030af",
+        "name": "",
+        "x": 650,
+        "y": 460,
+        "wires": [
+            [
+                "164ba4e813219381"
+            ]
+        ]
+    },
+    {
+        "id": "50ed3e061cf8c0f1",
+        "type": "subflow:78b14acfd61617f6",
+        "z": "c6e2056fe0d030af",
+        "name": "",
+        "x": 490,
+        "y": 640,
+        "wires": [
+            [
+                "5e0339cae63b9ec7"
+            ]
+        ]
+    },
+    {
+        "id": "563d26356a37447f",
+        "type": "subflow:78b14acfd61617f6",
+        "z": "c6e2056fe0d030af",
+        "name": "",
+        "x": 550,
+        "y": 800,
+        "wires": [
+            [
+                "e0d316869ea22be1"
+            ]
+        ]
+    },
+    {
+        "id": "adcee89d27743177",
+        "type": "subflow:78b14acfd61617f6",
+        "z": "c6e2056fe0d030af",
+        "name": "",
+        "x": 490,
+        "y": 1060,
+        "wires": [
+            [
+                "64181f29b8f93ce5"
+            ]
+        ]
+    },
+    {
+        "id": "38a8a5d0d718fe22",
+        "type": "subflow:78b14acfd61617f6",
+        "z": "c6e2056fe0d030af",
+        "name": "",
+        "x": 510,
+        "y": 1240,
+        "wires": [
+            [
+                "fe6a9e5da6282469"
+            ]
+        ]
+    },
+    {
+        "id": "e0d316869ea22be1",
+        "type": "subflow:6f1b7a955d99d1aa",
+        "z": "c6e2056fe0d030af",
+        "name": "",
+        "x": 720,
+        "y": 800,
+        "wires": [
+            [
+                "cb4de059da20f8eb"
+            ]
+        ]
+    },
+    {
+        "id": "64181f29b8f93ce5",
+        "type": "subflow:6f1b7a955d99d1aa",
+        "z": "c6e2056fe0d030af",
+        "name": "",
+        "x": 670,
+        "y": 1060,
+        "wires": [
+            [
+                "3e428b83a4977b74"
+            ]
+        ]
+    },
+    {
+        "id": "fe6a9e5da6282469",
+        "type": "subflow:6f1b7a955d99d1aa",
+        "z": "c6e2056fe0d030af",
+        "name": "",
+        "x": 720,
+        "y": 1240,
+        "wires": [
+            [
+                "b74e71650c0d2b7e"
+            ]
+        ]
+    },
+    {
+        "id": "59ac53cc050376ea",
+        "type": "mongodb4",
+        "z": "c6e2056fe0d030af",
+        "clientNode": "c197ed750d7bd0a3",
+        "mode": "collection",
+        "collection": "user",
+        "operation": "insertOne",
+        "output": "toArray",
+        "maxTimeMS": "0",
+        "handleDocId": true,
+        "name": "",
+        "x": 1340,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8e0a6ca70f41543b",
+        "type": "inject",
+        "z": "c6e2056fe0d030af",
+        "name": "",
+        "props": [
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 510,
+        "y": 160,
+        "wires": [
+            [
+                "764c3f1b519271d5"
+            ]
+        ]
+    },
+    {
+        "id": "09b9a6c673d7c6c2",
+        "type": "mongodb4",
+        "z": "c6e2056fe0d030af",
+        "clientNode": "6efc9b95bad15d2f",
+        "mode": "collection",
+        "collection": "user",
+        "operation": "count",
+        "output": "toArray",
+        "maxTimeMS": "0",
+        "handleDocId": true,
+        "name": "",
+        "x": 910,
+        "y": 160,
+        "wires": [
+            [
+                "5ad71d124a8eaf56"
+            ]
+        ]
+    },
+    {
+        "id": "5ad71d124a8eaf56",
+        "type": "function",
+        "z": "c6e2056fe0d030af",
+        "name": "function 8",
+        "func": "if(msg.payload) return\n\nmsg.payload= {\n    \n    \"active\": true,\n    \"roles\": [\n        \"admin\"\n    ],\n    \"username\": \"sevval\",\n    \"stamp\": {\n        \"createAt\": 1,\n        \"ip\": \"127.0.0.1\",\n        \"username\": \"sevval\",\n        \"email\": \"\"\n    },\n    \"password\": \"$2a$10$RESL3sP4cEmm8fOuk9.cH.ArPHNUEW/kQzNzWUVrySGqtlkxx4Zu.\",\n    \"email\": \"sevvalasan55@gmail.com\"\n    \n}\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1120,
+        "y": 160,
+        "wires": [
+            [
+                "59ac53cc050376ea"
+            ]
+        ]
+    },
+    {
+        "id": "764c3f1b519271d5",
+        "type": "function",
+        "z": "c6e2056fe0d030af",
+        "name": "function 9",
+        "func": "msg.payload ={ //msg= nede-red de düğümler arasında veri taşıyan nesne, payload=taşıdığı veri veya mesaj içeriğidir\n    email:\"sevvalasan55@gmail.com\"\n}\nreturn msg;\n\n\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 160,
+        "wires": [
+            [
+                "09b9a6c673d7c6c2"
+            ]
+        ]
+    },
+    {
+        "id": "f02c3e0c5f251986",
+        "type": "mongodb4",
+        "z": "c6e2056fe0d030af",
+        "clientNode": "c197ed750d7bd0a3",
+        "mode": "collection",
+        "collection": "todo",
+        "operation": "aggregate",
+        "output": "toArray",
+        "maxTimeMS": "0",
+        "handleDocId": true,
+        "name": "",
+        "x": 1080,
+        "y": 300,
+        "wires": [
+            [
+                "f826133ed722253a"
+            ]
+        ]
+    },
+    {
+        "id": "67283bf5a4e52195",
+        "type": "mongodb4",
+        "z": "c6e2056fe0d030af",
+        "clientNode": "c197ed750d7bd0a3",
+        "mode": "collection",
+        "collection": "todo",
+        "operation": "findOne",
+        "output": "toArray",
+        "maxTimeMS": "0",
+        "handleDocId": true,
+        "name": "",
+        "x": 1060,
+        "y": 440,
+        "wires": [
+            [
+                "d1d2920af6e9218e"
+            ]
+        ]
+    },
+    {
+        "id": "d1d2920af6e9218e",
+        "type": "function",
+        "z": "c6e2056fe0d030af",
+        "name": "function 10",
+        "func": "if(!msg.payload) {\n    msg.error ={\n        message : \"id ile eşleşen bir kayıt bulunamadı\"\n              \n    }\n    return[null,msg]\n}\n if(msg.payload.done) {\n    msg.error ={\n        message : \"Tamamlanan işler güncellenemez\"\n              \n    }\n    return[null,msg]\n}\n\nreturn msg;\n",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1250,
+        "y": 440,
+        "wires": [
+            [
+                "eca6a14dd059b3fa"
+            ],
+            [
+                "0db87c94349cbd1b"
+            ]
+        ]
+    },
+    {
+        "id": "6fc47299fd350912",
+        "type": "function",
+        "z": "c6e2056fe0d030af",
+        "name": "function 12",
+        "func": "if (!msg.payload) { // Eğer eşleşen bir öğe bulunamazsa\n    msg.error = {\n        message: \"id ile eşleşen bir kayıt bulunamadı\" // Eşleşen kayıt yoksa hata mesajı döner\n    };\n    return [null, msg];\n}\n\nif (msg.payload.stamp.username !== msg.user.username && !msg.user.roles.includes(\"admin\")) {\n    msg.error = {\n        message: \"Yetkisiz erişim.\"\n    };\n    return [null, msg];\n}\n\nif (msg.req.params.type === \"update\" && msg.payload.done) {\n    // Eğer işlem \"update\" ve öğe tamamlanmışsa\n    msg.error = {\n        message: \"Tamamlanan işler güncellenemez\"\n    };\n    return [null, msg];\n}\n\nmsg.todo=msg.payload\nmsg.payload= [\n    {\n        _id: msg.formData.id\n    }\n   \n]\nconst date=new Date()\nconst now=date.getTime()\n\nif (msg.req.params.type === \"trash\") {\n    // Eğer işlem \"trash\" ise, yani öğe silinecekse\n    msg.operation = \"deleteOne\"\n} else {\n    msg.operation = \"updateOne\"\n\n    switch (msg.req.params.type) {\n        case \"complete\":\n            msg.payload.push({\n                $set: {\n                    done: true\n            }\n            })\n             break;\n            \n        case \"open\":\n            msg.payload.push({\n                $set: {\n                    done: false\n                }\n            })\n            break;\n        case \"update\":\n            msg.payload.push({\n                $set: {\n                    name: msg.formData.name\n                }\n            })\n            break;\n    }\n\n    // Öğenin zaman damgası bilgilerini günceller\n    msg.payload[1].$set.stamp = {\n        createdAt: now, // Güncellenme zamanı\n        ip: msg.req.ip, // Güncelleme yapanın IP adresi\n        username: msg.user.username || \"\",\n        email: msg.user.email || \"\"\n    };\n    msg.payload[1].$set.date = date.toLocaleDateString(\"TR\");\n    msg.payload[1].$set.time = date.toLocaleTimeString(\"TR\"); // Saat eklenmiş\n}\n\n\n\nreturn msg.scheduleOptions ? [msg,null,msg]: msg;",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1310,
+        "y": 660,
+        "wires": [
+            [
+                "4b2c5e55b1345a58"
+            ],
+            [
+                "aff72e95f0bc5a62"
+            ]
+        ]
+    },
+    {
+        "id": "66abcd0622c3b585",
+        "type": "mongodb4",
+        "z": "c6e2056fe0d030af",
+        "clientNode": "c197ed750d7bd0a3",
+        "mode": "collection",
+        "collection": "todo",
+        "operation": "insertOne",
+        "output": "toArray",
+        "maxTimeMS": "0",
+        "handleDocId": true,
+        "name": "",
+        "x": 1100,
+        "y": 580,
+        "wires": [
+            [
+                "ccb224b910fc3c3c"
+            ]
+        ]
+    },
+    {
+        "id": "572e228fd7b7a6f0",
+        "type": "mongodb4",
+        "z": "c6e2056fe0d030af",
+        "clientNode": "c197ed750d7bd0a3",
+        "mode": "collection",
+        "collection": "todo",
+        "operation": "findOne",
+        "output": "toArray",
+        "maxTimeMS": "0",
+        "handleDocId": true,
+        "name": "",
+        "x": 1100,
+        "y": 660,
+        "wires": [
+            [
+                "6fc47299fd350912"
+            ]
+        ]
+    },
+    {
+        "id": "4b2c5e55b1345a58",
+        "type": "mongodb4",
+        "z": "c6e2056fe0d030af",
+        "clientNode": "c197ed750d7bd0a3",
+        "mode": "collection",
+        "collection": "todo",
+        "operation": "",
+        "output": "toArray",
+        "maxTimeMS": "0",
+        "handleDocId": true,
+        "name": "",
+        "x": 1490,
+        "y": 600,
+        "wires": [
+            [
+                "744f0d276af8d816"
+            ]
+        ]
+    },
+    {
+        "id": "744f0d276af8d816",
+        "type": "http response",
+        "z": "c6e2056fe0d030af",
+        "name": "",
+        "statusCode": "302",
+        "headers": {
+            "location": "/"
+        },
+        "x": 1660,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "55e3b4cd29586c5c",
+        "type": "mongodb4",
+        "z": "c6e2056fe0d030af",
+        "clientNode": "c197ed750d7bd0a3",
+        "mode": "collection",
+        "collection": "user",
+        "operation": "aggregate",
+        "output": "toArray",
+        "maxTimeMS": "0",
+        "handleDocId": true,
+        "name": "",
+        "x": 1140,
+        "y": 800,
+        "wires": [
+            [
+                "138b8e787ed673b0"
+            ]
+        ]
+    },
+    {
+        "id": "15897bb083bc1cd6",
+        "type": "mongodb4",
+        "z": "c6e2056fe0d030af",
+        "clientNode": "c197ed750d7bd0a3",
+        "mode": "collection",
+        "collection": "user",
+        "operation": "insertOne",
+        "output": "toArray",
+        "maxTimeMS": "0",
+        "handleDocId": true,
+        "name": "",
+        "x": 1740,
+        "y": 960,
+        "wires": [
+            [
+                "7b73b43b16908d96"
+            ]
+        ]
+    },
+    {
+        "id": "ac08803ead4319af",
+        "type": "mongodb4",
+        "z": "c6e2056fe0d030af",
+        "clientNode": "c197ed750d7bd0a3",
+        "mode": "collection",
+        "collection": "user",
+        "operation": "findOne",
+        "output": "toArray",
+        "maxTimeMS": "0",
+        "handleDocId": true,
+        "name": "",
+        "x": 1740,
+        "y": 1040,
+        "wires": [
+            [
+                "a3459f54a8460b3a"
+            ]
+        ]
+    },
+    {
+        "id": "a3459f54a8460b3a",
+        "type": "function",
+        "z": "c6e2056fe0d030af",
+        "name": "function 14",
+        "func": "    if (!msg.payload) { // Eğer eşleşen bir öğe bulunamazsa\n        msg.error = {\n            message: \"id ile eşleşen bir kayıt bulunamadı\" ,\n                    formData: msg.formData\n\n         };\n        return [null, msg];\n    }\n\n    if(msg.formData.username !== msg.payload.username){\n        msg.error={\n            message:\"Kullanıcı adı güncellenemez.\",\n                    formData: msg.formData\n\n        }\n        return[null,msg]\n    }\n      msg.formData.active = msg.formData.status === \"active\"\n      delete msg.formData.status \n      msg.todo = msg.payload\n      const date = new Date()\n      const now = date.getTime()\n     msg.payload = [\n    {\n        _id: msg.formData.id\n    },\n    {\n        $set: {\n            ...msg.formData,\n            stamp:{\n         createdAt: now, // Güncellenme zamanı\n            ip: msg.req.ip, // Güncelleme yapanın IP adresi\n            username: msg.user.username || \"\",\n            email: msg.user.username || \"\"  \n            },\n            date : date.toLocaleDateString(\"TR\"),\n            time : date.toLocaleTimeString(\"TR\")\n\n        } \n    }\n\n    ]\n\nreturn msg;\n\n",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1890,
+        "y": 1040,
+        "wires": [
+            [
+                "f8fc673a980e4a44"
+            ],
+            [
+                "bf41a9e500979582"
+            ]
+        ]
+    },
+    {
+        "id": "f8fc673a980e4a44",
+        "type": "mongodb4",
+        "z": "c6e2056fe0d030af",
+        "clientNode": "c197ed750d7bd0a3",
+        "mode": "collection",
+        "collection": "user",
+        "operation": "updateOne",
+        "output": "toArray",
+        "maxTimeMS": "0",
+        "handleDocId": true,
+        "name": "",
+        "x": 2050,
+        "y": 1000,
+        "wires": [
+            [
+                "3aa5d41033feb330"
+            ]
+        ]
+    },
+    {
+        "id": "3aa5d41033feb330",
+        "type": "http response",
+        "z": "c6e2056fe0d030af",
+        "name": "",
+        "statusCode": "302",
+        "headers": {
+            "location": "/user-list"
+        },
+        "x": 2200,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "92e3168e8133bed7",
+        "type": "mongodb4",
+        "z": "c6e2056fe0d030af",
+        "clientNode": "c197ed750d7bd0a3",
+        "mode": "collection",
+        "collection": "user",
+        "operation": "findOne",
+        "output": "toArray",
+        "maxTimeMS": "0",
+        "handleDocId": true,
+        "name": "",
+        "x": 1160,
+        "y": 1240,
+        "wires": [
+            [
+                "e4b56c6f2f19603f"
+            ]
+        ]
+    },
+    {
+        "id": "e4b56c6f2f19603f",
+        "type": "function",
+        "z": "c6e2056fe0d030af",
+        "name": "function 15",
+        "func": "if(!msg.payload){\n\n    msg.error={\n        message:\"id ile eşleşen bir kayıt bulunamadı\",\n     formData: msg.formData\n\n    }\n        return[null,msg]\n} \nmsg.hasUser= msg.payload.roles.includes(\"user\")\nmsg.hasAdmin= msg.payload.roles.includes(\"admin\")\n\nmsg.payload={ ...msg.payload , ...msg.formData}\nreturn msg;",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1350,
+        "y": 1240,
+        "wires": [
+            [
+                "42a482b1b1f8bfdd"
+            ],
+            [
+                "30a33adebccef4e0"
+            ]
+        ]
+    },
+    {
+        "id": "d9022720f1d118d0",
+        "type": "mongodb4",
+        "z": "c6e2056fe0d030af",
+        "clientNode": "c197ed750d7bd0a3",
+        "mode": "collection",
+        "collection": "user",
+        "operation": "findOne",
+        "output": "toArray",
+        "maxTimeMS": "0",
+        "handleDocId": true,
+        "name": "",
+        "x": 790,
+        "y": 1720,
+        "wires": [
+            [
+                "5d072eee15866725"
+            ]
+        ]
+    },
+    {
+        "id": "5d072eee15866725",
+        "type": "function",
+        "z": "c6e2056fe0d030af",
+        "name": "function 16",
+        "func": "if(!msg.payload){\n    msg.error={\n        message: \"Kullanıcı adı veya parola hatalı.\"\n    }\n    return[null,msg]\n}\n\nmsg.user=msg.payload //msg.payload değerini msg.user alanına kopyalar, msg.user alanı güncellenir\nreturn msg;",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 1720,
+        "wires": [
+            [
+                "aab53ab5e5ac9751"
+            ],
+            [
+                "45a51a760ebf02cd"
+            ]
+        ]
+    },
+    {
+        "id": "45a51a760ebf02cd",
+        "type": "link out",
+        "z": "c6e2056fe0d030af",
+        "name": "link out 22",
+        "mode": "link",
+        "links": [
+            "72eb7c9f1739059d"
+        ],
+        "x": 1115,
+        "y": 1780,
+        "wires": []
+    },
+    {
+        "id": "2eb3403f5559dfd4",
+        "type": "function",
+        "z": "c6e2056fe0d030af",
+        "name": "function 17",
+        "func": "msg.payload = [{\n    _id: {\n        $ne: msg.formData.id // \n    },\n    email: msg.formData.email\n}]\nreturn msg;\n\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 1040,
+        "wires": [
+            [
+                "7a7e7daf562c842c"
+            ]
+        ]
+    },
+    {
+        "id": "7a7e7daf562c842c",
+        "type": "mongodb4",
+        "z": "c6e2056fe0d030af",
+        "clientNode": "c197ed750d7bd0a3",
+        "mode": "collection",
+        "collection": "user",
+        "operation": "count",
+        "output": "toArray",
+        "maxTimeMS": "0",
+        "handleDocId": true,
+        "name": "",
+        "x": 1150,
+        "y": 1040,
+        "wires": [
+            [
+                "6c66b289aaf07ed2"
+            ]
+        ]
+    },
+    {
+        "id": "6c66b289aaf07ed2",
+        "type": "function",
+        "z": "c6e2056fe0d030af",
+        "name": "function 18",
+        "func": "if (msg.payload) {\n    msg.error = {\n        message: `Bu eposta adresi kullanılmaktadır.`,\n        formData: msg.formData\n    }\n    msg.payload = msg.formData\n    return msg.req.headers.referer.includes(\"user-edit\") ? [null, null, msg] : [null, msg]\n}\n\nreturn msg",
+        "outputs": 3,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1290,
+        "y": 1040,
+        "wires": [
+            [
+                "7d4f7e3c17412d1f"
+            ],
+            [
+                "3740be23d5cc99e6"
+            ],
+            [
+                "0bfce6d5d69fa215"
+            ]
+        ]
+    },
+    {
+        "id": "0bfce6d5d69fa215",
+        "type": "link out",
+        "z": "c6e2056fe0d030af",
+        "name": "link out 24",
+        "mode": "link",
+        "links": [
+            "95c8d588bf7703fa"
+        ],
+        "x": 1405,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "3740be23d5cc99e6",
+        "type": "link out",
+        "z": "c6e2056fe0d030af",
+        "name": "link out 23",
+        "mode": "link",
+        "links": [],
+        "x": 1415,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "f826133ed722253a",
+        "type": "function",
+        "z": "c6e2056fe0d030af",
+        "name": "progress value",
+        "func": "const isDone = msg.payload.filter(x => x.done)\n \nmsg.progressWidth = isDone.length / msg.payload.length * 100\n \nswitch (true) {\n    case 0 <= msg.progressWidth && 25 >= msg.progressWidth:\n        msg.emojiClass = \"bi-emoji-tear\"\n        break;\n    case 25 < msg.progressWidth && 50 >= msg.progressWidth:\n        msg.emojiClass = \"bi-emoji-neutral\"\n        break;\n    case 50 < msg.progressWidth && 75 >= msg.progressWidth:\n        msg.emojiClass = \"bi-emoji-smile\"\n        break;\n    case 75 < msg.progressWidth:\n        msg.emojiClass = \"bi-emoji-grin\"\n        break;    \n    default:\n        msg.emojiClass = \"bi-emoji-tear\"\n       \n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1260,
+        "y": 300,
+        "wires": [
+            [
+                "227e7279384db33e"
+            ]
+        ]
+    },
+    {
+        "id": "5697da5b770734e9",
+        "type": "http response",
+        "z": "c6e2056fe0d030af",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 950,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "749dfd9849043890",
+        "type": "bcrypt",
+        "z": "c6e2056fe0d030af",
+        "name": "",
+        "action": "encrypt",
+        "field": "formData.password",
+        "hash": "payload",
+        "target": "formData.password",
+        "assignment": "assign",
+        "match": "match",
+        "outputs": 1,
+        "rounds": 10,
+        "x": 450,
+        "y": 1420,
+        "wires": [
+            [
+                "e6d52077cbe23d09"
+            ]
+        ]
+    },
+    {
+        "id": "e6d52077cbe23d09",
+        "type": "function",
+        "z": "c6e2056fe0d030af",
+        "name": "function 19",
+        "func": "msg.payload = [\n    {\n        _id: msg.formData.id\n    },\n    {\n        $set: {\n            ...msg.formData,\n        }\n    }\n]\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 1420,
+        "wires": [
+            [
+                "7802fd46f71cce62"
+            ]
+        ]
+    },
+    {
+        "id": "e40b00391c1c085e",
+        "type": "function",
+        "z": "c6e2056fe0d030af",
+        "name": "function 20",
+        "func": "msg.formData = msg.payload\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 1420,
+        "wires": [
+            [
+                "749dfd9849043890"
+            ]
+        ]
+    },
+    {
+        "id": "7802fd46f71cce62",
+        "type": "mongodb4",
+        "z": "c6e2056fe0d030af",
+        "clientNode": "c197ed750d7bd0a3",
+        "mode": "collection",
+        "collection": "user",
+        "operation": "updateOne",
+        "output": "toArray",
+        "maxTimeMS": "0",
+        "handleDocId": true,
+        "name": "",
+        "x": 790,
+        "y": 1420,
+        "wires": [
+            [
+                "5697da5b770734e9"
+            ]
+        ]
+    }
+]

@@ -1,0 +1,26 @@
+{
+  "name": "redd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@buglss/node-red-crontinject": "~3.0.2",
+    "bootstrap-icons": "^1.11.3",
+    "dashboard-evi": "~1.0.2",
+    "mongoose": "^8.5.0",
+    "node-red": "^4.0.2",
+    "node-red-contrib-bcrypt": "~0.1.6",
+    "node-red-contrib-jwt": "~0.1.0",
+    "node-red-contrib-mongo-client": "~0.2.2",
+    "node-red-contrib-mongodb3": "~2.0.1",
+    "node-red-contrib-mongodb4": "~2.5.2",
+    "node-red-dashboard": "^3.6.5",
+    "node-red-node-email": "~3.0.1",
+    "node-red-node-mongodb": "^0.2.5"
+  }
+}
